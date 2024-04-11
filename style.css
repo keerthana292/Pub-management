@@ -1,0 +1,203 @@
+:root{
+    --color1: #916915;
+    --color2:#e2a520;
+  --color3:#ddd9d9; 
+}
+@font-face{
+    font-family: 'font-1';
+    src: url('fonts/font1/MrDafoe-Regular.ttf');
+}
+@font-face{
+    font-family: 'font-2';
+    src: url('fonts/font2/AguafinaScript-Regular.ttf');
+}
+@font-face{
+    font-family: 'font-3';
+    src: url('fonts/font3/GreatVibes-Regular.ttf');
+}
+@font-face{
+    font-family: "font-4";
+    src: url('fonts/font4/Oswald-Regular.ttf');
+
+}
+*{  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*::selection{background-color:rgb(204, 184, 94)}
+
+html
+{
+    scroll-behavior:smooth;
+    padding: 0;
+    margin: 0;
+}
+/* *{
+    border: 2px solid red;
+} */
+#front{
+    height: 100vh;
+    width: 100%;
+    background-image: url('images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+     top: -10vh;
+     padding-top: 10vh;
+     border-top: 5px solid var(--color1);
+     animation: bg 25s infinite;
+     
+}
+@keyframes bg{
+    10%{background-image: url('images/bg.jpg');}
+    30%{background-image: url('images/bg2.jpg');}
+    50%{background-image: url('images/bg3.jpeg');}
+    70%{background-image: url('images/bg4.jpg');}
+    90%{background-image: url('images/bg5.jpg');}
+    100%{background-image: url('images/bg6.jpg');}
+}
+@media (max-width:1100px) {
+    #front{ position: relative;
+        top: 0vh;}
+    
+}
+.top i{
+ margin-left: 2vh!important;
+}
+.nav-item a{
+    color: white;
+    font-size: 3vh;
+    margin-left: 5vh;
+}
+.nav-item a:hover
+{ color:var(--color1) ;
+
+}
+/* front */
+#front1
+{   
+    height: 100vh;
+    
+}
+/* intro-page */
+#intro
+{  background-image:url('images/intro-bg.jpg');
+   height:100%;
+   position: relative;
+   top:-10vh;
+   padding-bottom: 10vh;
+}
+.h{
+    line-height: 5vh!important;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.hand-img{
+    width: 80%;
+    height: 80%;
+    position: relative;
+}
+.hand-img img{
+    width: 100%;
+    position: absolute;
+    /* transform: translate(0%, -40%); */
+    animation: mymove 5s infinite ease-in-out;
+}
+@keyframes mymove {
+    0%   {top: 0px;}
+    50%   {top: 15px;}
+    75%   {top: 10px;}
+    100%   {top: 0px;}
+  }
+  /* drink-varients */
+ .card-footer{
+    padding: 1vh!important;
+    background-color:#c99b37!important;
+ }
+ .card-footer span{
+    margin: 1vh!important;
+    color: black!important;
+ }
+ .card-header{overflow: hidden;}
+ .card:hover .h3{
+     color: var(--color1)!important;
+ }
+ .card:hover span{color: var(--color3)!important;}
+ .card img:hover{
+    filter: brightness(50%);
+    transform: scale(1.20);
+    transition:0.4s ease;
+ }
+ .footer .col-md-3:hover
+ {   color: var(--color2)!important;
+ }
+  @media (max-width:950px) {
+    .hand-img{
+        display: none;
+    } 
+  }
+  /* menus  */
+  .c{color: var(--color1)!important;}
+  .c:hover
+  { background-color:#1e2124;
+    color: var(--color1)!important;
+  }
+  .colorWiscky{
+    color: var(--color1)!important;
+  }
+  .fontWiscky{
+    font-weight: 200!important;
+  }
+  .wiscky-img img:hover{
+    filter:drop-shadow(10px 10px 30px);
+
+  } 
+  @media (max-width:765px ) {
+        .sub_footer{
+            background-color: #01060a!important;
+        }
+  }
+  /* advertisment  */
+  .ad{
+    background-image: url('images/adver.jpg');
+    background-repeat: no-repeat;
+    background-position:100%;
+    background-size: cover;
+    
+  }
+.ad_icon{
+    font-size:5vh!important;
+    border-radius: 50%;
+    border: 1px solid var(--color1);
+}
+.ad_icon:hover{
+    filter: drop-shadow(5px 5px 15px var(--color1));
+}
+/* event  */
+.event_h1{
+    color: var(--color1)!important;
+    font-family: font-3!important;
+    font-weight: 800!important;
+}
+.event_h3
+{
+    color: var(--color3)!important;
+    font-family: font-4!important;
+}
+.event_line{
+    color: var(--color3)!important;
+}
+.event_line:hover{
+    transition: all ease-in-out ;
+    border-bottom: 2px solid var(--color1)!important;
+}
+/* footer */
+.footer{
+    background-image: url('images/wine1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top;
+}
+.icon i{
+    background-color:#c99b37;
+}
